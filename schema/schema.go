@@ -1,8 +1,10 @@
 package schema;
 
-import "log";
-import "github.com/graphql-go/graphql";
-import "dock/schema/image";
+import (
+  "log"
+  "github.com/graphql-go/graphql"
+  "dock/schema/image"
+);
 
 func Schema() *graphql.Schema {
   fields := graphql.Fields {

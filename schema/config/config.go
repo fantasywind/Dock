@@ -1,3 +1,3 @@
-package config
+package config;
 
-var Endpoint = "unix:///var/run/docker.sock";
+const Endpoint = "unix:///var/run/docker.sock";

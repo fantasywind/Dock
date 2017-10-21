@@ -68,7 +68,7 @@ var ImageListQuery = &graphql.Field {
     client, err := docker.NewClient(config.Endpoint);
 
     if err != nil {
-      log.Fatalf("Failed to create connection to docker engine on %s, error: %v", config.Endpoint, err);
+      log.Fatalf("Failed to create connection to docker engine on %v, error: %v", config.Endpoint, err);
     }
 
     images, err := client.ListImages(docker.ListImagesOptions { All: false });
